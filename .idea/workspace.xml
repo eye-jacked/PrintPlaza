@@ -2,13 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b5e3089e-3abf-461a-976a-ffc65f329af1" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/src/Book.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/src/BookRepo.php" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/api/source/dbinit.php" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/PrintPlaza.iml" afterPath="$PROJECT_DIR$/.idea/PrintPlaza.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/src/books.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/index.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/api/src/Book.php" afterPath="$PROJECT_DIR$/source/Book.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/api/src/BookRepo.php" afterPath="$PROJECT_DIR$/source/BookRepo.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/bootstrap.php" afterPath="$PROJECT_DIR$/source/bootstrap.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/test.php" afterPath="$PROJECT_DIR$/source/test.php" />
     </list>
     <ignored path="PrintPlaza.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -37,10 +36,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="test.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="test.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/source/test.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
+            <state relative-caret-position="148">
               <caret line="16" column="66" selection-start-line="16" selection-start-column="66" selection-end-line="16" selection-end-column="66" />
               <folding />
             </state>
@@ -50,39 +49,15 @@
       <file leaf-file-name="db_init.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/db_init.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-126">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="274">
+              <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
               <folding>
-                <marker date="1477312995666" expanded="true" signature="633:1003" ph="CREATE TABLE... rst_users" />
-                <marker date="1477312995666" expanded="true" signature="1354:1485" ph="INSERT INTO rst_users... " />
-                <marker date="1477312995666" expanded="true" signature="1516:1645" ph="INSERT INTO rst_users... " />
-                <marker date="1477312995666" expanded="true" signature="1675:1806" ph="INSERT INTO rst_users... " />
-                <marker date="1477312995666" expanded="true" signature="1840:1973" ph="INSERT INTO rst_users... " />
-                <marker date="1477312995666" expanded="true" signature="2041:2072" ph="DROP TABLE I... " />
-                <marker date="1477312995666" expanded="true" signature="2090:2414" ph="CREATE TABLE... rst_chirps" />
-                <marker date="1477312995666" expanded="true" signature="2464:2494" ph="DROP TABLE I... " />
-                <marker date="1477312995666" expanded="true" signature="2512:2815" ph="CREATE TABLE... rst_posts" />
-                <marker date="1477312995666" expanded="true" signature="2832:2921" ph="ALTER TABLE rst_posts... " />
-                <marker date="1477312995666" expanded="true" signature="2938:3029" ph="ALTER TABLE rst_posts... " />
-                <marker date="1477312995666" expanded="true" signature="3075:3104" ph="DROP TABLE I... " />
-                <marker date="1477312995666" expanded="true" signature="3122:3569" ph="CREATE TABLE... rst_msgs" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="db_init.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/src/db_init.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="169">
-              <caret line="29" column="26" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="26" />
-              <folding>
-                <marker date="1478035897955" expanded="true" signature="644:972" ph="CREATE TABLE... rst_users" />
-                <marker date="1478035897955" expanded="true" signature="1023:1153" ph="INSERT INTO books... " />
-                <marker date="1478035897955" expanded="true" signature="1170:1333" ph="INSERT INTO books... " />
-                <marker date="1478035897955" expanded="true" signature="1350:1495" ph="INSERT INTO books... " />
-                <marker date="1478035897955" expanded="true" signature="1512:1631" ph="INSERT INTO books... " />
-                <marker date="1478035897955" expanded="true" signature="1635:1650" ph="CREATE TABLE... rst_posts" />
+                <marker date="1479215907686" expanded="true" signature="642:970" ph="CREATE TABLE... rst_users" />
+                <marker date="1479215907686" expanded="true" signature="1021:1151" ph="INSERT INTO books... " />
+                <marker date="1479215907686" expanded="true" signature="1168:1331" ph="INSERT INTO books... " />
+                <marker date="1479215907686" expanded="true" signature="1348:1493" ph="INSERT INTO books... " />
+                <marker date="1479215907686" expanded="true" signature="1510:1629" ph="INSERT INTO books... " />
+                <marker date="1479215907686" expanded="true" signature="1633:1648" ph="CREATE TABLE... rst_posts" />
               </folding>
             </state>
           </provider>
@@ -99,38 +74,60 @@
         </entry>
       </file>
       <file leaf-file-name="Book.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/src/Book.php">
+        <entry file="file://$PROJECT_DIR$/source/Book.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+            <state relative-caret-position="168">
+              <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="386">
+              <caret line="27" column="41" selection-start-line="27" selection-start-column="41" selection-end-line="27" selection-end-column="41" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="books.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/api/src/books.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1302">
+              <caret line="62" column="4" selection-start-line="62" selection-start-column="4" selection-end-line="62" selection-end-column="4" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="BookRepo.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/src/BookRepo.php">
+        <entry file="file://$PROJECT_DIR$/source/BookRepo.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="232">
+            <state relative-caret-position="1281">
               <caret line="61" column="36" selection-start-line="61" selection-start-column="36" selection-end-line="61" selection-end-column="36" />
               <folding>
                 <marker date="1478036021459" expanded="true" signature="440:516" ph="SELECT p.id,... rst_posts" />
                 <marker date="1478036021459" expanded="true" signature="440:573" ph="SELECT title... books" />
-                <marker date="1478036021459" expanded="true" signature="440:2063" ph="SELECT p.id,... rst_posts" />
                 <marker date="1478036021459" expanded="true" signature="834:954" ph="INSERT INTO books... " />
-                <marker date="1478036021459" expanded="true" signature="851:954" ph="SELECT title... books" />
-                <marker date="1478036021459" expanded="true" signature="1404:1519" ph="UPDATE books... " />
                 <marker date="1478036021459" expanded="true" signature="1404:1533" ph="UPDATE books... " />
-                <marker date="1478036021459" expanded="true" signature="1404:2063" ph="UPDATE books... " />
-                <marker date="1478036021459" expanded="true" signature="1410:1519" ph="INSERT INTO books... " />
                 <marker date="1478036021459" expanded="true" signature="1900:1970" ph="DELETE FROM " />
-                <marker date="1478036021459" expanded="true" signature="1911:1970" ph="UPDATE books... " />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
@@ -154,6 +151,14 @@
         <option value="$PROJECT_DIR$/api/src/db_init.php" />
         <option value="$PROJECT_DIR$/api/src/BookRepo.php" />
         <option value="$PROJECT_DIR$/source/test.php" />
+        <option value="$PROJECT_DIR$/db_init.php" />
+        <option value="$PROJECT_DIR$/index.php.html" />
+        <option value="$PROJECT_DIR$/js/app.js" />
+        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/api/src/book.php" />
+        <option value="$PROJECT_DIR$/source/Book.php" />
+        <option value="$PROJECT_DIR$/api/src/apibook.php" />
+        <option value="$PROJECT_DIR$/api/src/books.php" />
       </list>
     </option>
   </component>
@@ -214,6 +219,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -266,18 +273,21 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../WorkshopII" />
-    <property name="settings.editor.selected.configurable" value="Errors" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="JavaScriptPreferStrict" value="false" />
+    <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/source" />
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/api/source" />
     </key>
   </component>
@@ -342,23 +352,31 @@
       <workItem from="1477761236393" duration="290000" />
       <workItem from="1478023471762" duration="985000" />
       <workItem from="1478024992793" duration="1803000" />
-      <workItem from="1478026808325" duration="5621000" />
+      <workItem from="1478026808325" duration="6099000" />
+      <workItem from="1479214201352" duration="6204000" />
     </task>
+    <task id="LOCAL-00001" summary="step 2 completed: repo, DB functions complete. Next is JSON functionality">
+      <created>1478036615459</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1478036615459</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8699000" />
+    <option name="totallyTimeSpent" value="15381000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="30" width="1368" height="739" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14879154" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1510574" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32850242" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32850242" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -368,6 +386,7 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32850242" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
@@ -394,23 +413,84 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/source/test.php">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db_init.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db_init.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="609">
+          <caret line="29" column="26" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="26" />
+          <folding>
+            <marker date="1479215907686" expanded="true" signature="642:970" ph="CREATE TABLE... rst_users" />
+            <marker date="1479215907686" expanded="true" signature="1021:1151" ph="INSERT INTO books... " />
+            <marker date="1479215907686" expanded="true" signature="1168:1331" ph="INSERT INTO books... " />
+            <marker date="1479215907686" expanded="true" signature="1348:1493" ph="INSERT INTO books... " />
+            <marker date="1479215907686" expanded="true" signature="1510:1629" ph="INSERT INTO books... " />
+            <marker date="1479215907686" expanded="true" signature="1633:1648" ph="CREATE TABLE... rst_posts" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/bootstrap.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/Book.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/BookRepo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1281">
+          <caret line="61" column="36" selection-start-line="61" selection-start-column="36" selection-end-line="61" selection-end-column="36" />
+          <folding>
+            <marker date="1478036021459" expanded="true" signature="440:516" ph="SELECT p.id,... rst_posts" />
+            <marker date="1478036021459" expanded="true" signature="440:573" ph="SELECT title... books" />
+            <marker date="1478036021459" expanded="true" signature="834:954" ph="INSERT INTO books... " />
+            <marker date="1478036021459" expanded="true" signature="1404:1533" ph="UPDATE books... " />
+            <marker date="1478036021459" expanded="true" signature="1900:1970" ph="DELETE FROM " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/test.php">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="21">
           <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/db_init.php">
+    <entry file="file://$PROJECT_DIR$/db_init.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1478035897955" expanded="true" signature="644:972" ph="CREATE TABLE... rst_users" />
-            <marker date="1478035897955" expanded="true" signature="1023:1153" ph="INSERT INTO books... " />
-            <marker date="1478035897955" expanded="true" signature="1170:1333" ph="INSERT INTO books... " />
-            <marker date="1478035897955" expanded="true" signature="1350:1495" ph="INSERT INTO books... " />
-            <marker date="1478035897955" expanded="true" signature="1512:1631" ph="INSERT INTO books... " />
-            <marker date="1478035897955" expanded="true" signature="1635:1650" ph="CREATE TABLE... rst_posts" />
+            <marker date="1479215907686" expanded="true" signature="642:970" ph="CREATE TABLE... rst_users" />
+            <marker date="1479215907686" expanded="true" signature="1021:1151" ph="INSERT INTO books... " />
+            <marker date="1479215907686" expanded="true" signature="1168:1331" ph="INSERT INTO books... " />
+            <marker date="1479215907686" expanded="true" signature="1348:1493" ph="INSERT INTO books... " />
+            <marker date="1479215907686" expanded="true" signature="1510:1629" ph="INSERT INTO books... " />
+            <marker date="1479215907686" expanded="true" signature="1633:1648" ph="CREATE TABLE... rst_posts" />
           </folding>
         </state>
       </provider>
@@ -423,7 +503,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/Book.php">
+    <entry file="file://$PROJECT_DIR$/source/Book.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="84">
           <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
@@ -464,11 +544,86 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/BookRepo.php">
+    <entry file="file://$PROJECT_DIR$/source/BookRepo.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="42">
           <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding>
+            <marker date="1478036021459" expanded="true" signature="440:516" ph="SELECT p.id,... rst_posts" />
+            <marker date="1478036021459" expanded="true" signature="440:573" ph="SELECT title... books" />
+            <marker date="1478036021459" expanded="true" signature="834:954" ph="INSERT INTO books... " />
+            <marker date="1478036021459" expanded="true" signature="1404:1533" ph="UPDATE books... " />
+            <marker date="1478036021459" expanded="true" signature="1900:1970" ph="DELETE FROM " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/test.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="16" column="66" selection-start-line="16" selection-start-column="66" selection-end-line="16" selection-end-column="66" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db_init.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1113">
+          <caret line="16" column="60" selection-start-line="16" selection-start-column="60" selection-end-line="16" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db_init.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="274">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding>
+            <marker date="1479215907686" expanded="true" signature="642:970" ph="CREATE TABLE... rst_users" />
+            <marker date="1479215907686" expanded="true" signature="1021:1151" ph="INSERT INTO books... " />
+            <marker date="1479215907686" expanded="true" signature="1168:1331" ph="INSERT INTO books... " />
+            <marker date="1479215907686" expanded="true" signature="1348:1493" ph="INSERT INTO books... " />
+            <marker date="1479215907686" expanded="true" signature="1510:1629" ph="INSERT INTO books... " />
+            <marker date="1479215907686" expanded="true" signature="1633:1648" ph="CREATE TABLE... rst_posts" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="4" column="16" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-8526">
+          <caret line="8" column="26" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="386">
+          <caret line="27" column="41" selection-start-line="27" selection-start-column="41" selection-end-line="27" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/BookRepo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1281">
+          <caret line="61" column="36" selection-start-line="61" selection-start-column="36" selection-end-line="61" selection-end-column="36" />
+          <folding>
+            <marker date="1478036021459" expanded="true" signature="440:516" ph="SELECT p.id,... rst_posts" />
+            <marker date="1478036021459" expanded="true" signature="440:573" ph="SELECT title... books" />
+            <marker date="1478036021459" expanded="true" signature="834:954" ph="INSERT INTO books... " />
+            <marker date="1478036021459" expanded="true" signature="1404:1533" ph="UPDATE books... " />
+            <marker date="1478036021459" expanded="true" signature="1900:1970" ph="DELETE FROM " />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -480,75 +635,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/Book.php">
+    <entry file="file://$PROJECT_DIR$/source/Book.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+        <state relative-caret-position="168">
+          <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/BookRepo.php">
+    <entry file="file://$PROJECT_DIR$/api/src/books.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="61" column="36" selection-start-line="61" selection-start-column="36" selection-end-line="61" selection-end-column="36" />
-          <folding>
-            <marker date="1478036021459" expanded="true" signature="440:516" ph="SELECT p.id,... rst_posts" />
-            <marker date="1478036021459" expanded="true" signature="440:573" ph="SELECT title... books" />
-            <marker date="1478036021459" expanded="true" signature="440:2063" ph="SELECT p.id,... rst_posts" />
-            <marker date="1478036021459" expanded="true" signature="834:954" ph="INSERT INTO books... " />
-            <marker date="1478036021459" expanded="true" signature="851:954" ph="SELECT title... books" />
-            <marker date="1478036021459" expanded="true" signature="1404:1519" ph="UPDATE books... " />
-            <marker date="1478036021459" expanded="true" signature="1404:1533" ph="UPDATE books... " />
-            <marker date="1478036021459" expanded="true" signature="1404:2063" ph="UPDATE books... " />
-            <marker date="1478036021459" expanded="true" signature="1410:1519" ph="INSERT INTO books... " />
-            <marker date="1478036021459" expanded="true" signature="1900:1970" ph="DELETE FROM " />
-            <marker date="1478036021459" expanded="true" signature="1911:1970" ph="UPDATE books... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db_init.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-126">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1477312995666" expanded="true" signature="633:1003" ph="CREATE TABLE... rst_users" />
-            <marker date="1477312995666" expanded="true" signature="1354:1485" ph="INSERT INTO rst_users... " />
-            <marker date="1477312995666" expanded="true" signature="1516:1645" ph="INSERT INTO rst_users... " />
-            <marker date="1477312995666" expanded="true" signature="1675:1806" ph="INSERT INTO rst_users... " />
-            <marker date="1477312995666" expanded="true" signature="1840:1973" ph="INSERT INTO rst_users... " />
-            <marker date="1477312995666" expanded="true" signature="2041:2072" ph="DROP TABLE I... " />
-            <marker date="1477312995666" expanded="true" signature="2090:2414" ph="CREATE TABLE... rst_chirps" />
-            <marker date="1477312995666" expanded="true" signature="2464:2494" ph="DROP TABLE I... " />
-            <marker date="1477312995666" expanded="true" signature="2512:2815" ph="CREATE TABLE... rst_posts" />
-            <marker date="1477312995666" expanded="true" signature="2832:2921" ph="ALTER TABLE rst_posts... " />
-            <marker date="1477312995666" expanded="true" signature="2938:3029" ph="ALTER TABLE rst_posts... " />
-            <marker date="1477312995666" expanded="true" signature="3075:3104" ph="DROP TABLE I... " />
-            <marker date="1477312995666" expanded="true" signature="3122:3569" ph="CREATE TABLE... rst_msgs" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/db_init.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="29" column="26" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="26" />
-          <folding>
-            <marker date="1478035897955" expanded="true" signature="644:972" ph="CREATE TABLE... rst_users" />
-            <marker date="1478035897955" expanded="true" signature="1023:1153" ph="INSERT INTO books... " />
-            <marker date="1478035897955" expanded="true" signature="1170:1333" ph="INSERT INTO books... " />
-            <marker date="1478035897955" expanded="true" signature="1350:1495" ph="INSERT INTO books... " />
-            <marker date="1478035897955" expanded="true" signature="1512:1631" ph="INSERT INTO books... " />
-            <marker date="1478035897955" expanded="true" signature="1635:1650" ph="CREATE TABLE... rst_posts" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/test.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="16" column="66" selection-start-line="16" selection-start-column="66" selection-end-line="16" selection-end-column="66" />
+        <state relative-caret-position="1302">
+          <caret line="62" column="4" selection-start-line="62" selection-start-column="4" selection-end-line="62" selection-end-column="4" />
           <folding />
         </state>
       </provider>

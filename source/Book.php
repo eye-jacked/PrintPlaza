@@ -9,13 +9,13 @@ class Book{
 
     /**
      * Book constructor.
+     *
      */
-    public function __construct()
+    public function __construct($title, $author, $description)
     {
-        $this->id = -1;
-        $this->title = '';
-        $this->author = '';
-        $this->description = '';
+        $this->title = $title;
+        $this->author = $author;
+        $this->description = $description;
     }
 
 
