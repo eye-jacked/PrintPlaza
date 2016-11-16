@@ -8,6 +8,10 @@ class BookRepo
     private $pdo;
 
 
+    /**
+     * BookRepo constructor.
+     * @param array $configuration
+     */
     public function __construct(array $configuration)
     {
         $this->configuration = $configuration;
@@ -19,6 +23,20 @@ class BookRepo
         );
     }
 
+    public function getAllBooks()
+    {
+        $stmt = $this->pdo->prepare('SELECT *
+                                     FROM books;');
+        $stmt->execute();
+        $bookData = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+        return $bookData;
+    }
+
+    /**
+     * @param $id
+     * @return array
+     */
     public function loadById($id)
     {
         $stmt = $this->pdo->prepare('SELECT title, author, description
@@ -32,6 +50,9 @@ class BookRepo
         return $bookData;
     }
 
+    /**
+     * @param Book $book
+     */
     public function createInDb(Book $book)
     {
         $stmt = $this->pdo->prepare('INSERT INTO books (title, author, description)
@@ -47,6 +68,11 @@ class BookRepo
         $stmt->execute();
     }
 
+    /**
+     * @param $id
+     * @param $title
+     * @param $author
+     */
     public function updateInDb($id, $title, $author)
     {
         $stmt = $this->pdo->prepare('UPDATE books SET title = :title, author = :author, description = :description
@@ -59,6 +85,9 @@ class BookRepo
         $stmt->execute();
     }
 
+    /**
+     * @param $id
+     */
     public function deleteFromDb($id)
     {
         $stmt = $this->pdo->prepare('DELETE FROM books 
@@ -67,5 +96,6 @@ class BookRepo
         $stmt->bindParam(':id', $id, PDO::PARAM_INT);
         $stmt->execute();
     }
+
 
 }

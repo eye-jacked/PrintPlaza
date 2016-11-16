@@ -1,14 +1,14 @@
 <?php
 header("Access-Control-Allow-Origin: *");
-require 'source/bootstrap.php';
+require '../../source/bootstrap.php';
 
 switch ($_SERVER['REQUEST_METHOD']) {
 
     case 'GET':
-        $books = new Books();
+        $bookRepo = new bookRepo($configuration);
         if (count($_GET) == 0) {
             // return all books for main screen
-            echo json_encode($books->getAllBooks());
+            echo json_encode($bookRepo->getAllBooks());
         }
         else {
             if (!empty($_GET['sort'])) {
@@ -33,7 +33,7 @@ switch ($_SERVER['REQUEST_METHOD']) {
                 echo json_encode($books->getBooksPerPageMin($offset, $limit));
             }
             if (!empty($_GET['before'])) {
-                // return all boks before specified id
+                // return all books before specified id
                 $id = $_GET['before'];
                 echo json_encode($books->getBooksBeforeId($id));
             }

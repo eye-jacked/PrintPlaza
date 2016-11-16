@@ -6,6 +6,6 @@ $configuration = array(
     'db_pass' => 'CodersLab',
 );
 
-require_once __DIR__.'/../api/src/BookRepo.php';
-require_once __DIR__.'/../api/src/Book.php';
+require_once 'BookRepo.php';
+require_once 'Book.php';
 
